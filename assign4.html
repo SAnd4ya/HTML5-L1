@@ -1,0 +1,37 @@
+<html>
+<head>  
+<script>
+window.onload = function () { 
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Board of Control for Cricket in India"
+	}, 
+axisY:{
+		includeZero: false
+	},
+	axisX:{
+		includeZero: true
+	}, 
+data: [{        
+		type: "line",       
+		dataPoints: [
+			{X:'5',y:40},
+			{X:'10',y:75},
+			{X:'15',y: 140}
+		]
+	}]
+}); 
+ 
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+</body>
+</html> 
+ 

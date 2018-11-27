@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<style>
+.clearfix {
+    overflow: auto;
+    }
+    img {
+    display: block;
+    margin-left: 400;
+    float: left;
+   
+}
+</style>
+</head>
+<body> 
+<div class="clearfix">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-K0Lt2JeHqZONPXrzBFmiqIrV80BSYXOTlv9jMRohl1M_ttyt" alt="Hot Ballon" width="100" height="100"><h1><center>Awesome Online videos</center></h1>
+</div>
+<hr>
+<br><br>
+
+<div style="text-align:center"> 
+   <video id="video1" width="420">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+  <br><br>
+  
+  <button onclick="play()">Play</button> 
+   <button onClick="pause()">Pause</button>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function play() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+     
+}
+function  pause() {
+    if (myVideo.played)
+        myVideo.pause();
+}
+
+
+</script> 
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+</body> 
+</html>
